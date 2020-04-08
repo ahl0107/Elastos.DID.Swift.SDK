@@ -233,24 +233,105 @@ public class DIDDocument {
     public var defaultPublicKey: DIDURL {
         return getDefaultPublicKey()!
     }
+    /*
+     public func keyPair(ofId: DIDURL) throws -> KeyValuePairs<Any, Any> {
+     guard containsPublicKey(forId: ofId) else {
+     throw DIDError.illegalArgument("Key no exist")
+     }
+     return try HDKey.DerivedKey.keyPair(<#Data#>)
+     }
+
+     public func keyPair(ofid: String) throws -> KeyValuePairs<Any, Any> {
+     // TODO:
+     }
+     */
+    public func keyPair(ofId: DIDURL, using storePassword: String) throws -> KeyValuePairs<Any, Any> {
+        guard containsPublicKey(forId: ofId) else {
+            throw DIDError.illegalArgument("Key no exist")
+        }
+        guard getMeta().attachedStore else {
+            throw DIDError.didStoreError("Not attached with DID store.")
+        }
+        guard getMeta().store!.containsPrivateKey(for: subject, id: ofId) else {
+            throw DIDError.invalidKey("Don't have private key")
+        }
+
+        return try HDKey.DerivedKey.keyPair(getMeta().store!.loadPrivateKey(for: subject, byId: ofId, using: storePassword))
+    }
+
+    public func keyPair(ofId: String, using storePassword: String) throws -> KeyValuePairs<Any, Any>{
+        return try keyPair(ofId: DIDURL(subject, ofId), using: storePassword)
+    }
+
+    // public JwtBuilder jwtBuilder(){}
+    public func jwtBuilder() throws -> JwtBuilder {
+
+        return JwtBuilder(getPublicKey: { (id) -> KeyValuePairs<Any, Any>? in
+
+            var _id: DIDURL
+            if id == nil {
+                _id = self.getDefaultPublicKey()!
+            } else {
+                _id = try DIDURL(self.subject, id!)
+            }
+            return try self.keyPair(ofId: _id, using: "TODO")
+
+        }) { (id, storepass) -> KeyValuePairs<Any, Any>? in
+            var _id: DIDURL
+
+            if id == nil {
+                _id = self.getDefaultPublicKey()!
+            } else {
+                _id = try DIDURL(self.subject, id!)
+            }
+            // TODO
+            return try self.keyPair(ofId: _id, using: storepass)
+        }
+    }
+
 
     /*
-    public func keyPair(ofId: DIDURL) throws -> KeyPair {
-        // TODO:
-    }
+     public JwtBuilder jwtBuilder() {
+         return new JwtBuilder(new KeyProvider() {
 
-    public func keyPair(ofid: String) throws -> KeyPair {
-        // TODO:
-    }
+             @Override
+             public java.security.PublicKey getPublicKey(String id)
+                     throws InvalidKeyException {
+                 DIDURL _id = id == null ? getDefaultPublicKey() : new DIDURL(getSubject(), id);
 
-    public func keyPair(ofId: DIDURL, using storePassword: String) throws {
-        // TODO:
-    }
+                 return getKeyPair(_id).getPublic();
+             }
 
-    public func keyPair(ofId: String, using storePassword: String) throws {
-        // TODO:
-    }*/
+             @Override
+             public PrivateKey getPrivateKey(String id, String storepass)
+                     throws InvalidKeyException, DIDStoreException {
+                 DIDURL _id = id == null ? getDefaultPublicKey() :
+                     new DIDURL(getSubject(), id);
 
+                 return getKeyPair(_id, storepass).getPrivate();
+             }
+         });
+     }
+
+     public JwtParserBuilder jwtParserBuilder() {
+         return new JwtParserBuilder(new KeyProvider() {
+
+             @Override
+             public java.security.PublicKey getPublicKey(String id)
+                     throws InvalidKeyException {
+                 DIDURL _id = id == null ? getDefaultPublicKey() :
+                     new DIDURL(getSubject(), id);
+
+                 return getKeyPair(_id).getPublic();
+             }
+
+             @Override
+             public PrivateKey getPrivateKey(String id, String storepass) {
+                 return null;
+             }
+         });
+     }
+     */
     func appendPublicKey(_ publicKey: PublicKey) -> Bool {
         for key in publicKeys() {
             if  key.getId() == publicKey.getId() ||
@@ -700,7 +781,8 @@ public class DIDDocument {
         }
         let pks: [UInt8] = pubKey!.publicKeyBytes
         var pkData: Data = Data(bytes: pks, count: pks.count)
-        let cpk: UnsafeMutablePointer<UInt8> = pkData.withUnsafeMutableBytes { (pk: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
+        let cpk: UnsafeMutablePointer<UInt8> = pkData.withUnsafeMutableBytes { (pk: UnsafeMutablePointer<UInt8>)
+            -> UnsafeMutablePointer<UInt8> in
             return pk
         }
         let csignature = sigature.toUnsafeMutablePointerInt8()
@@ -715,7 +797,7 @@ public class DIDDocument {
         var options: JsonSerializer.Options
 
         options = JsonSerializer.Options()
-                                .withHint("document subject")
+            .withHint("document subject")
         let did = try serializer.getDID(Constants.ID, options)
         setSubject(did)
 
@@ -758,8 +840,8 @@ public class DIDDocument {
         }
 
         options = JsonSerializer.Options()
-                                .withOptional()
-                                .withHint("document expires")
+            .withOptional()
+            .withHint("document expires")
         let expirationDate = try serializer.getDate(Constants.EXPIRES, options)
         self.setExpirationDate(expirationDate)
 
@@ -797,13 +879,13 @@ public class DIDDocument {
             do {
                 var pk: PublicKey
                 if let _ = node.asDictionary() {
-                  pk =  try PublicKey.fromJson(node, self.subject)
+                    pk =  try PublicKey.fromJson(node, self.subject)
                 }
                 else {
                     let serializer = JsonSerializer(node)
                     var options: JsonSerializer.Options
                     options = JsonSerializer.Options()
-                                            .withRef(subject)
+                        .withRef(subject)
                     let didUrl = try serializer.getDIDURL(options)
                     pk = publicKey(ofId: didUrl!)!
                 }
@@ -830,7 +912,7 @@ public class DIDDocument {
                     let serializer = JsonSerializer(node)
                     var options: JsonSerializer.Options
                     options = JsonSerializer.Options()
-                                            .withRef(subject)
+                        .withRef(subject)
                     let didUrl = try serializer.getDIDURL(options)
                     pk = publicKey(ofId: didUrl!)!
                 }
@@ -909,33 +991,33 @@ public class DIDDocument {
     }
 
     /*
-    * Normalized serialization order:
-    *
-    * - id
-    * + publickey
-    *   + public keys array ordered by id(case insensitive/ascending)
-    *     - id
-    *     - type
-    *     - controller
-    *     - publicKeyBase58
-    * + authentication
-    *   - ordered by public key' ids(case insensitive/ascending)
-    * + authorization
-    *   - ordered by public key' ids(case insensitive/ascending)
-    * + verifiableCredential
-    *   - credentials array ordered by id(case insensitive/ascending)
-    * + service
-    *   + services array ordered by id(case insensitive/ascending)
-    *     - id
-    *     - type
-    *     - endpoint
-    * - expires
-    * + proof
-    *   - type
-    *   - created
-    *   - creator
-    *   - signatureValue
-    */
+     * Normalized serialization order:
+     *
+     * - id
+     * + publickey
+     *   + public keys array ordered by id(case insensitive/ascending)
+     *     - id
+     *     - type
+     *     - controller
+     *     - publicKeyBase58
+     * + authentication
+     *   - ordered by public key' ids(case insensitive/ascending)
+     * + authorization
+     *   - ordered by public key' ids(case insensitive/ascending)
+     * + verifiableCredential
+     *   - credentials array ordered by id(case insensitive/ascending)
+     * + service
+     *   + services array ordered by id(case insensitive/ascending)
+     *     - id
+     *     - type
+     *     - endpoint
+     * - expires
+     * + proof
+     *   - type
+     *   - created
+     *   - creator
+     *   - signatureValue
+     */
     private func toJson(_ generator: JsonGenerator, _ normalized: Bool, _ forSign: Bool) throws {
         generator.writeStartObject()
 

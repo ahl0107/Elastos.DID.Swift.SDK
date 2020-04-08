@@ -1,4 +1,5 @@
 import Foundation
+import SwiftJWT
 
 class HDKey: NSObject {
     static let PUBLICKEY_BYTES : Int = CHDKey.PUBLICKEY_BYTES
@@ -66,14 +67,21 @@ class HDKey: NSObject {
             let privatekeyData: Data = Data(buffer: privatekeyPointerToArry)
             return [UInt8](privatekeyData)
         }
-        
+
         func serialize() -> Data {
-            // TODO:
             return getPrivateKeyData()
         }
+
+        class func keyPair(_ privateKey: Data) throws -> KeyValuePairs<Any, Any> {
+            let curve = try EllipticCurve.objectToCurve(ObjectIdentifier: privateKey)
+            let ecPrivateKey =  try ECPrivateKey.make(for: curve)
+            let ecPublicKey = try ecPrivateKey.extractPublicKey()
+
+            return [ecPrivateKey: ecPublicKey]
+        }
         
-//        class func deserialize(_ data: Data) -> DerivedKey? {
-//        }
+        //        class func deserialize(_ data: Data) -> DerivedKey? {
+        //        }
 
         func wipe() {
             DerivedKey_Wipe(self.cderivedKey)

@@ -1,5 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
 def import_pods
-  pod 'PromiseKit'
+  pod 'PromiseKit' 
+  pod 'SwiftJWT'
 end
 
 target :ElastosDIDSDK do

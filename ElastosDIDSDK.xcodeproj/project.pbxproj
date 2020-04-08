@@ -52,6 +52,18 @@
 		1137CFAB2398DE1C00250D4F /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110AD2FE234E44C8006578D6 /* Base58.swift */; };
 		1147721523F6976800C7C36F /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147721023F6976800C7C36F /* Mnemonic.swift */; };
 		1155D94B2352FACE00DF8C9D /* ElastosDIDSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F262AA23260CF40009C103 /* ElastosDIDSDK.framework */; };
+		115A3697243DBEB4005549CC /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A368C243DBEB4005549CC /* EllipticCurve.swift */; };
+		115A3698243DBEB4005549CC /* ECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A368D243DBEB4005549CC /* ECPublicKey.swift */; };
+		115A3699243DBEB4005549CC /* ECSignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A368E243DBEB4005549CC /* ECSignable.swift */; };
+		115A369A243DBEB5005549CC /* SSLPointerTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A368F243DBEB4005549CC /* SSLPointerTricks.swift */; };
+		115A369B243DBEB5005549CC /* ECError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3690243DBEB4005549CC /* ECError.swift */; };
+		115A369C243DBEB5005549CC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3691243DBEB4005549CC /* ECPrivateKey.swift */; };
+		115A369D243DBEB5005549CC /* ECDecryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3692243DBEB4005549CC /* ECDecryptable.swift */; };
+		115A369E243DBEB5005549CC /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3693243DBEB4005549CC /* Data+Extensions.swift */; };
+		115A369F243DBEB5005549CC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3694243DBEB4005549CC /* ASN1.swift */; };
+		115A36A0243DBEB5005549CC /* ECSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3695243DBEB4005549CC /* ECSignature.swift */; };
+		115A36A1243DBEB5005549CC /* ECEncryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3696243DBEB4005549CC /* ECEncryptable.swift */; };
+		115A36A5243E286F005549CC /* JwtBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36A4243E286F005549CC /* JwtBuilder.swift */; };
 		11641BB523B702FC0037016B /* AbstractAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11641BB423B702FC0037016B /* AbstractAdapter.swift */; };
 		11641BBB23B715CF0037016B /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11641BBA23B715CF0037016B /* TestError.swift */; };
 		11782AC6242130C4009A1F5A /* DIDURLLexer.tokens in Resources */ = {isa = PBXBuildFile; fileRef = 11782ABB242130C3009A1F5A /* DIDURLLexer.tokens */; };
@@ -261,6 +273,18 @@
 		1147721023F6976800C7C36F /* Mnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
 		1155D9462352FACE00DF8C9D /* ElastosDIDSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElastosDIDSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1155D94A2352FACE00DF8C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115A368C243DBEB4005549CC /* EllipticCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
+		115A368D243DBEB4005549CC /* ECPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPublicKey.swift; sourceTree = "<group>"; };
+		115A368E243DBEB4005549CC /* ECSignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignable.swift; sourceTree = "<group>"; };
+		115A368F243DBEB4005549CC /* SSLPointerTricks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLPointerTricks.swift; sourceTree = "<group>"; };
+		115A3690243DBEB4005549CC /* ECError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECError.swift; sourceTree = "<group>"; };
+		115A3691243DBEB4005549CC /* ECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPrivateKey.swift; sourceTree = "<group>"; };
+		115A3692243DBEB4005549CC /* ECDecryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECDecryptable.swift; sourceTree = "<group>"; };
+		115A3693243DBEB4005549CC /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		115A3694243DBEB4005549CC /* ASN1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1.swift; sourceTree = "<group>"; };
+		115A3695243DBEB4005549CC /* ECSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignature.swift; sourceTree = "<group>"; };
+		115A3696243DBEB4005549CC /* ECEncryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECEncryptable.swift; sourceTree = "<group>"; };
+		115A36A4243E286F005549CC /* JwtBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtBuilder.swift; sourceTree = "<group>"; };
 		11641BB423B702FC0037016B /* AbstractAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAdapter.swift; sourceTree = "<group>"; };
 		11641BBA23B715CF0037016B /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		11782ABB242130C3009A1F5A /* DIDURLLexer.tokens */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DIDURLLexer.tokens; path = Parser/DIDURLLexer.tokens; sourceTree = "<group>"; };
@@ -526,6 +550,24 @@
 			path = ElastosDIDSDKTests;
 			sourceTree = "<group>";
 		};
+		115A368B243DBEB4005549CC /* CryptorECC */ = {
+			isa = PBXGroup;
+			children = (
+				115A368C243DBEB4005549CC /* EllipticCurve.swift */,
+				115A368D243DBEB4005549CC /* ECPublicKey.swift */,
+				115A368E243DBEB4005549CC /* ECSignable.swift */,
+				115A368F243DBEB4005549CC /* SSLPointerTricks.swift */,
+				115A3690243DBEB4005549CC /* ECError.swift */,
+				115A3691243DBEB4005549CC /* ECPrivateKey.swift */,
+				115A3692243DBEB4005549CC /* ECDecryptable.swift */,
+				115A3693243DBEB4005549CC /* Data+Extensions.swift */,
+				115A3694243DBEB4005549CC /* ASN1.swift */,
+				115A3695243DBEB4005549CC /* ECSignature.swift */,
+				115A3696243DBEB4005549CC /* ECEncryptable.swift */,
+			);
+			path = CryptorECC;
+			sourceTree = "<group>";
+		};
 		116C94E8234D825B00BA9777 /* HDKey */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,6 +627,7 @@
 		11E3F791233D121900EF35C3 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				115A368B243DBEB4005549CC /* CryptorECC */,
 				11133F5423C48B4600BFDA3E /* SPVWrapper.xcodeproj */,
 				110AD2FD234E44BA006578D6 /* base58 */,
 				110AD2F0234E431D006578D6 /* Antlr4.xcodeproj */,
@@ -626,6 +669,7 @@
 				A31ACDFE23F199AE008EC032 /* Constants.swift */,
 				A31801A8240277180087E074 /* JsonNode.swift */,
 				1147721023F6976800C7C36F /* Mnemonic.swift */,
+				115A36A4243E286F005549CC /* JwtBuilder.swift */,
 				A31ACE0523F199AE008EC032 /* DID.swift */,
 				A31ACDFC23F199AE008EC032 /* DIDURL.swift */,
 				A31ACE0323F199AE008EC032 /* DIDObject.swift */,
@@ -1035,14 +1079,18 @@
 				A31ACE6123F19A4E008EC032 /* DIDMeta.swift in Sources */,
 				1125B582238234FB00D396B6 /* CHDKey.swift in Sources */,
 				A31ACE2223F199BA008EC032 /* VerifiableCredentialBuilder.swift in Sources */,
+				115A369F243DBEB5005549CC /* ASN1.swift in Sources */,
 				A31ACE0F23F199AE008EC032 /* DIDAdapter.swift in Sources */,
 				A31ACE0623F199AE008EC032 /* PublicKey.swift in Sources */,
 				A31801A324015EA30087E074 /* DIDResolver.swift in Sources */,
+				115A369A243DBEB5005549CC /* SSLPointerTricks.swift in Sources */,
 				11D1D5422435D2C800A78617 /* DIDHistory.swift in Sources */,
+				115A36A5243E286F005549CC /* JwtBuilder.swift in Sources */,
 				A31ACE0D23F199AE008EC032 /* FileSystemStorage.swift in Sources */,
 				A31ACE0A23F199AE008EC032 /* DIDURL.swift in Sources */,
 				11782ACE242130C4009A1F5A /* DIDURLLexer.swift in Sources */,
 				A31ACE1323F199AE008EC032 /* DID.swift in Sources */,
+				115A36A0243DBEB5005549CC /* ECSignature.swift in Sources */,
 				A31ACE3F23F19A22008EC032 /* DateHelper.swift in Sources */,
 				1147721523F6976800C7C36F /* Mnemonic.swift in Sources */,
 				11782ACA242130C4009A1F5A /* DIDURLParserATN.swift in Sources */,
@@ -1053,15 +1101,20 @@
 				A31ACE2723F19A04008EC032 /* DIDError.swift in Sources */,
 				A31ACE0923F199AE008EC032 /* DIDStorage.swift in Sources */,
 				A31ACE2323F199BA008EC032 /* VerifiableCredential.swift in Sources */,
+				115A3698243DBEB4005549CC /* ECPublicKey.swift in Sources */,
 				110830CF241FA0E4000FDD2B /* ResolverCache.swift in Sources */,
+				115A3699243DBEB4005549CC /* ECSignable.swift in Sources */,
 				A31ACE3B23F19A22008EC032 /* DateFormatter.swift in Sources */,
 				A31801AB240281B00087E074 /* LRUCache.swift in Sources */,
 				A31ACE6923F19A66008EC032 /* IDTransactionInfo.swift in Sources */,
 				11782ACC242130C4009A1F5A /* DIDURLListener.swift in Sources */,
 				A31ACE1F23F199BA008EC032 /* VerifiablePresentation.swift in Sources */,
 				A31ACE3D23F19A22008EC032 /* JsonSerializer.swift in Sources */,
+				115A3697243DBEB4005549CC /* EllipticCurve.swift in Sources */,
+				115A369D243DBEB5005549CC /* ECDecryptable.swift in Sources */,
 				A31ACE1223F199AE008EC032 /* DIDBackend.swift in Sources */,
 				A31ACE5F23F19A4E008EC032 /* Metadata.swift in Sources */,
+				115A369E243DBEB5005549CC /* Data+Extensions.swift in Sources */,
 				A31ACE6B23F19A66008EC032 /* IDChainRequestOperation.swift in Sources */,
 				A31ACE6A23F19A66008EC032 /* ResolveResult.swift in Sources */,
 				A31ACE0723F199AE008EC032 /* DIDDocumentBuilder.swift in Sources */,
@@ -1073,11 +1126,14 @@
 				A31ACE0E23F199AE008EC032 /* DIDDocumentProof.swift in Sources */,
 				11782AC8242130C4009A1F5A /* DIDURLBaseListener.swift in Sources */,
 				A31ACE1E23F199BA008EC032 /* VerifiablePresentationBuilder.swift in Sources */,
+				115A369B243DBEB5005549CC /* ECError.swift in Sources */,
 				A31ACE0B23F199AE008EC032 /* DIDStore.swift in Sources */,
 				A31ACE1023F199AE008EC032 /* DIDDocument.swift in Sources */,
 				A31ACE2823F19A04008EC032 /* Errors.swift in Sources */,
 				11795211241B3A7100A1C55B /* RegexHelper.swift in Sources */,
+				115A36A1243DBEB5005549CC /* ECEncryptable.swift in Sources */,
 				A31ACE3723F19A22008EC032 /* ExtensionInt.swift in Sources */,
+				115A369C243DBEB5005549CC /* ECPrivateKey.swift in Sources */,
 				A3368469242201D90049126D /* LogLevel.swift in Sources */,
 				A31801A9240277190087E074 /* JsonNode.swift in Sources */,
 				A31ACE1123F199AE008EC032 /* DIDObject.swift in Sources */,
@@ -1320,7 +1376,7 @@
 				);
 				INFOPLIST_FILE = ElastosDIDSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1359,7 +1415,7 @@
 				);
 				INFOPLIST_FILE = ElastosDIDSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

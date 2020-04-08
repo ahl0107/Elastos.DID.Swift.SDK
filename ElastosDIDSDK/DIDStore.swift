@@ -1436,10 +1436,15 @@ public class DIDStore: NSObject {
         return try storePrivateKey(for: _did, id: _key, privateKey: privateKey, using: storePassword)
     }
     
-   public func loadPrivateKey(for did: DID, byId: DIDURL) throws -> String {
+    public func loadPrivateKey(for did: DID, byId: DIDURL) throws -> String {
         return try storage.loadPrivateKey(did, byId)
     }
-    
+
+    func loadPrivateKey(for did: DID, byId: DIDURL, using storePassword: String) throws -> Data {
+        let encryptedKey = try storage.loadPrivateKey(did, byId)
+        return try DIDStore.decryptFromBase64(encryptedKey, storePassword)
+    }
+
     public func containsPrivateKeys(for did: DID) -> Bool {
         return storage.containsPrivateKeys(did)
     }
