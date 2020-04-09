@@ -264,30 +264,30 @@ public class DIDDocument {
     }
 
     // public JwtBuilder jwtBuilder(){}
-    public func jwtBuilder() throws -> JwtBuilder {
-
-        return JwtBuilder(getPublicKey: { (id) -> KeyValuePairs<Any, Any>? in
-
-            var _id: DIDURL
-            if id == nil {
-                _id = self.getDefaultPublicKey()!
-            } else {
-                _id = try DIDURL(self.subject, id!)
-            }
-            return try self.keyPair(ofId: _id, using: "TODO")
-
-        }) { (id, storepass) -> KeyValuePairs<Any, Any>? in
-            var _id: DIDURL
-
-            if id == nil {
-                _id = self.getDefaultPublicKey()!
-            } else {
-                _id = try DIDURL(self.subject, id!)
-            }
-            // TODO
-            return try self.keyPair(ofId: _id, using: storepass)
-        }
-    }
+//    public func jwtBuilder() throws -> JwtBuilder {
+//
+//        return JwtBuilder(publicKey: { (id) -> KeyValuePairs<Any, Any>? in
+//
+//            var _id: DIDURL
+//            if id == nil {
+//                _id = self.getDefaultPublicKey()!
+//            } else {
+//                _id = try DIDURL(self.subject, id!)
+//            }
+//            return try self.keyPair(ofId: _id, using: "TODO")
+//
+//        }) { (id, storepass) -> KeyValuePairs<Any, Any>? in
+//            var _id: DIDURL
+//
+//            if id == nil {
+//                _id = self.getDefaultPublicKey()!
+//            } else {
+//                _id = try DIDURL(self.subject, id!)
+//            }
+//            // TODO
+//            return try self.keyPair(ofId: _id, using: storepass)
+//        }
+//    }
 
 
     /*
