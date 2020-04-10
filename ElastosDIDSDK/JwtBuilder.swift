@@ -1,5 +1,4 @@
 import Foundation
-import SwiftJWT
 
 public class JwtBuilder<T: Claims> {
 
@@ -24,7 +23,7 @@ public class JwtBuilder<T: Claims> {
     }
 
     func sign(using password: String) throws -> String {
-        let jwt = JWT(header: self.h!, claims: self.c!)
+        var jwt = JWT(header: self.h!, claims: self.c!)
         let privateKey = try self.privateKeyClosure!(nil, password)
         let jwtSigner = JWTSigner.rs256(privateKey: (privateKey?.data(using: .utf8))!)
         let signedJWT = try jwt.sign(using: jwtSigner)

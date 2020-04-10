@@ -52,17 +52,6 @@
 		1137CFAB2398DE1C00250D4F /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110AD2FE234E44C8006578D6 /* Base58.swift */; };
 		1147721523F6976800C7C36F /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147721023F6976800C7C36F /* Mnemonic.swift */; };
 		1155D94B2352FACE00DF8C9D /* ElastosDIDSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F262AA23260CF40009C103 /* ElastosDIDSDK.framework */; };
-		115A3697243DBEB4005549CC /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A368C243DBEB4005549CC /* EllipticCurve.swift */; };
-		115A3698243DBEB4005549CC /* ECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A368D243DBEB4005549CC /* ECPublicKey.swift */; };
-		115A3699243DBEB4005549CC /* ECSignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A368E243DBEB4005549CC /* ECSignable.swift */; };
-		115A369A243DBEB5005549CC /* SSLPointerTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A368F243DBEB4005549CC /* SSLPointerTricks.swift */; };
-		115A369B243DBEB5005549CC /* ECError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3690243DBEB4005549CC /* ECError.swift */; };
-		115A369C243DBEB5005549CC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3691243DBEB4005549CC /* ECPrivateKey.swift */; };
-		115A369D243DBEB5005549CC /* ECDecryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3692243DBEB4005549CC /* ECDecryptable.swift */; };
-		115A369E243DBEB5005549CC /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3693243DBEB4005549CC /* Data+Extensions.swift */; };
-		115A369F243DBEB5005549CC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3694243DBEB4005549CC /* ASN1.swift */; };
-		115A36A0243DBEB5005549CC /* ECSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3695243DBEB4005549CC /* ECSignature.swift */; };
-		115A36A1243DBEB5005549CC /* ECEncryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3696243DBEB4005549CC /* ECEncryptable.swift */; };
 		115A36A5243E286F005549CC /* JwtBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36A4243E286F005549CC /* JwtBuilder.swift */; };
 		115A36A9243F96D4005549CC /* JwtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36A8243F96D4005549CC /* JwtTest.swift */; };
 		115A36C4243F9B77005549CC /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36AF243F9B77005549CC /* Claims.swift */; };
@@ -105,6 +94,28 @@
 		115A36E9243F9B78005549CC /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C2243F9B77005549CC /* JWTDecoder.swift */; };
 		115A36EA243F9B78005549CC /* NoneAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C3243F9B77005549CC /* NoneAlgorithm.swift */; };
 		115A36EB243F9B78005549CC /* NoneAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C3243F9B77005549CC /* NoneAlgorithm.swift */; };
+		115A36FE244011E7005549CC /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F3244011E7005549CC /* EllipticCurve.swift */; };
+		115A36FF244011E7005549CC /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F3244011E7005549CC /* EllipticCurve.swift */; };
+		115A3700244011E7005549CC /* ECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F4244011E7005549CC /* ECPublicKey.swift */; };
+		115A3701244011E7005549CC /* ECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F4244011E7005549CC /* ECPublicKey.swift */; };
+		115A3702244011E7005549CC /* ECSignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F5244011E7005549CC /* ECSignable.swift */; };
+		115A3703244011E7005549CC /* ECSignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F5244011E7005549CC /* ECSignable.swift */; };
+		115A3704244011E7005549CC /* SSLPointerTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F6244011E7005549CC /* SSLPointerTricks.swift */; };
+		115A3705244011E7005549CC /* SSLPointerTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F6244011E7005549CC /* SSLPointerTricks.swift */; };
+		115A3706244011E7005549CC /* ECError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F7244011E7005549CC /* ECError.swift */; };
+		115A3707244011E7005549CC /* ECError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F7244011E7005549CC /* ECError.swift */; };
+		115A3708244011E7005549CC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F8244011E7005549CC /* ECPrivateKey.swift */; };
+		115A3709244011E7005549CC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F8244011E7005549CC /* ECPrivateKey.swift */; };
+		115A370A244011E7005549CC /* ECDecryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F9244011E7005549CC /* ECDecryptable.swift */; };
+		115A370B244011E7005549CC /* ECDecryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36F9244011E7005549CC /* ECDecryptable.swift */; };
+		115A370C244011E7005549CC /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36FA244011E7005549CC /* Data+Extensions.swift */; };
+		115A370D244011E7005549CC /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36FA244011E7005549CC /* Data+Extensions.swift */; };
+		115A370E244011E7005549CC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36FB244011E7005549CC /* ASN1.swift */; };
+		115A370F244011E7005549CC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36FB244011E7005549CC /* ASN1.swift */; };
+		115A3710244011E7005549CC /* ECSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36FC244011E7005549CC /* ECSignature.swift */; };
+		115A3711244011E7005549CC /* ECSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36FC244011E7005549CC /* ECSignature.swift */; };
+		115A3712244011E7005549CC /* ECEncryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36FD244011E7005549CC /* ECEncryptable.swift */; };
+		115A3713244011E7005549CC /* ECEncryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36FD244011E7005549CC /* ECEncryptable.swift */; };
 		11641BB523B702FC0037016B /* AbstractAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11641BB423B702FC0037016B /* AbstractAdapter.swift */; };
 		11641BBB23B715CF0037016B /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11641BBA23B715CF0037016B /* TestError.swift */; };
 		11782AC6242130C4009A1F5A /* DIDURLLexer.tokens in Resources */ = {isa = PBXBuildFile; fileRef = 11782ABB242130C3009A1F5A /* DIDURLLexer.tokens */; };
@@ -314,17 +325,6 @@
 		1147721023F6976800C7C36F /* Mnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
 		1155D9462352FACE00DF8C9D /* ElastosDIDSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElastosDIDSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1155D94A2352FACE00DF8C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		115A368C243DBEB4005549CC /* EllipticCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
-		115A368D243DBEB4005549CC /* ECPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPublicKey.swift; sourceTree = "<group>"; };
-		115A368E243DBEB4005549CC /* ECSignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignable.swift; sourceTree = "<group>"; };
-		115A368F243DBEB4005549CC /* SSLPointerTricks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLPointerTricks.swift; sourceTree = "<group>"; };
-		115A3690243DBEB4005549CC /* ECError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECError.swift; sourceTree = "<group>"; };
-		115A3691243DBEB4005549CC /* ECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPrivateKey.swift; sourceTree = "<group>"; };
-		115A3692243DBEB4005549CC /* ECDecryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECDecryptable.swift; sourceTree = "<group>"; };
-		115A3693243DBEB4005549CC /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
-		115A3694243DBEB4005549CC /* ASN1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1.swift; sourceTree = "<group>"; };
-		115A3695243DBEB4005549CC /* ECSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignature.swift; sourceTree = "<group>"; };
-		115A3696243DBEB4005549CC /* ECEncryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECEncryptable.swift; sourceTree = "<group>"; };
 		115A36A4243E286F005549CC /* JwtBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtBuilder.swift; sourceTree = "<group>"; };
 		115A36A8243F96D4005549CC /* JwtTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtTest.swift; sourceTree = "<group>"; };
 		115A36AF243F9B77005549CC /* Claims.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Claims.swift; sourceTree = "<group>"; };
@@ -347,6 +347,17 @@
 		115A36C1243F9B77005549CC /* SignerAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignerAlgorithm.swift; sourceTree = "<group>"; };
 		115A36C2243F9B77005549CC /* JWTDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 		115A36C3243F9B77005549CC /* NoneAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoneAlgorithm.swift; sourceTree = "<group>"; };
+		115A36F3244011E7005549CC /* EllipticCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
+		115A36F4244011E7005549CC /* ECPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPublicKey.swift; sourceTree = "<group>"; };
+		115A36F5244011E7005549CC /* ECSignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignable.swift; sourceTree = "<group>"; };
+		115A36F6244011E7005549CC /* SSLPointerTricks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLPointerTricks.swift; sourceTree = "<group>"; };
+		115A36F7244011E7005549CC /* ECError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECError.swift; sourceTree = "<group>"; };
+		115A36F8244011E7005549CC /* ECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPrivateKey.swift; sourceTree = "<group>"; };
+		115A36F9244011E7005549CC /* ECDecryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECDecryptable.swift; sourceTree = "<group>"; };
+		115A36FA244011E7005549CC /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		115A36FB244011E7005549CC /* ASN1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1.swift; sourceTree = "<group>"; };
+		115A36FC244011E7005549CC /* ECSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignature.swift; sourceTree = "<group>"; };
+		115A36FD244011E7005549CC /* ECEncryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECEncryptable.swift; sourceTree = "<group>"; };
 		11641BB423B702FC0037016B /* AbstractAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAdapter.swift; sourceTree = "<group>"; };
 		11641BBA23B715CF0037016B /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		11782ABB242130C3009A1F5A /* DIDURLLexer.tokens */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DIDURLLexer.tokens; path = Parser/DIDURLLexer.tokens; sourceTree = "<group>"; };
@@ -613,24 +624,6 @@
 			path = ElastosDIDSDKTests;
 			sourceTree = "<group>";
 		};
-		115A368B243DBEB4005549CC /* CryptorECC */ = {
-			isa = PBXGroup;
-			children = (
-				115A368C243DBEB4005549CC /* EllipticCurve.swift */,
-				115A368D243DBEB4005549CC /* ECPublicKey.swift */,
-				115A368E243DBEB4005549CC /* ECSignable.swift */,
-				115A368F243DBEB4005549CC /* SSLPointerTricks.swift */,
-				115A3690243DBEB4005549CC /* ECError.swift */,
-				115A3691243DBEB4005549CC /* ECPrivateKey.swift */,
-				115A3692243DBEB4005549CC /* ECDecryptable.swift */,
-				115A3693243DBEB4005549CC /* Data+Extensions.swift */,
-				115A3694243DBEB4005549CC /* ASN1.swift */,
-				115A3695243DBEB4005549CC /* ECSignature.swift */,
-				115A3696243DBEB4005549CC /* ECEncryptable.swift */,
-			);
-			path = CryptorECC;
-			sourceTree = "<group>";
-		};
 		115A36AE243F9B77005549CC /* SwiftJWT */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +657,25 @@
 				115A36B8243F9B77005549CC /* ClaimsStandardJWT.swift */,
 			);
 			path = ClaimsExamples;
+			sourceTree = "<group>";
+		};
+		115A36F2244011E7005549CC /* CryptorECC */ = {
+			isa = PBXGroup;
+			children = (
+				115A36F3244011E7005549CC /* EllipticCurve.swift */,
+				115A36F4244011E7005549CC /* ECPublicKey.swift */,
+				115A36F5244011E7005549CC /* ECSignable.swift */,
+				115A36F6244011E7005549CC /* SSLPointerTricks.swift */,
+				115A36F7244011E7005549CC /* ECError.swift */,
+				115A36F8244011E7005549CC /* ECPrivateKey.swift */,
+				115A36F9244011E7005549CC /* ECDecryptable.swift */,
+				115A36FA244011E7005549CC /* Data+Extensions.swift */,
+				115A36FB244011E7005549CC /* ASN1.swift */,
+				115A36FC244011E7005549CC /* ECSignature.swift */,
+				115A36FD244011E7005549CC /* ECEncryptable.swift */,
+			);
+			name = CryptorECC;
+			path = "../../../../Downloads/BlueECC-master/Sources/CryptorECC";
 			sourceTree = "<group>";
 		};
 		116C94E8234D825B00BA9777 /* HDKey */ = {
@@ -725,8 +737,8 @@
 		11E3F791233D121900EF35C3 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				115A36F2244011E7005549CC /* CryptorECC */,
 				115A36AE243F9B77005549CC /* SwiftJWT */,
-				115A368B243DBEB4005549CC /* CryptorECC */,
 				11133F5423C48B4600BFDA3E /* SPVWrapper.xcodeproj */,
 				110AD2FD234E44BA006578D6 /* base58 */,
 				110AD2F0234E431D006578D6 /* Antlr4.xcodeproj */,
@@ -1150,29 +1162,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				115A36C5243F9B77005549CC /* Claims.swift in Sources */,
+				115A3713244011E7005549CC /* ECEncryptable.swift in Sources */,
 				11641BB523B702FC0037016B /* AbstractAdapter.swift in Sources */,
+				115A3707244011E7005549CC /* ECError.swift in Sources */,
+				115A370D244011E7005549CC /* Data+Extensions.swift in Sources */,
 				1137CFA92398D68D00250D4F /* CHDKey.swift in Sources */,
 				115A36CB243F9B77005549CC /* JWTSigner.swift in Sources */,
 				1137CFAB2398DE1C00250D4F /* Base58.swift in Sources */,
 				115A36D9243F9B78005549CC /* ValidateClaimsResult.swift in Sources */,
+				115A3701244011E7005549CC /* ECPublicKey.swift in Sources */,
 				11D4B9B523535E7000453218 /* DIDDoucumentTests.swift in Sources */,
 				115A36C7243F9B77005549CC /* RSAKeyType.swift in Sources */,
 				115A36E1243F9B78005549CC /* BlueHMAC.swift in Sources */,
+				115A36FF244011E7005549CC /* EllipticCurve.swift in Sources */,
 				11E09CBC23A8DB5A009B6A8D /* IssuerTest.swift in Sources */,
 				115A36E3243F9B78005549CC /* BlueRSA.swift in Sources */,
 				11054F1F239D2088008A4500 /* DIDTest.swift in Sources */,
+				115A3703244011E7005549CC /* ECSignable.swift in Sources */,
 				115A36D5243F9B78005549CC /* ClaimsStandardJWT.swift in Sources */,
 				11E7519F23A7570A0022C592 /* TestData.swift in Sources */,
 				11054F1D239D1B31008A4500 /* DIDURLTest.swift in Sources */,
 				11D4B9C723545A5700453218 /* DIDStoreTests.swift in Sources */,
 				115A36D3243F9B78005549CC /* ClaimsOpenID.swift in Sources */,
+				115A3709244011E7005549CC /* ECPrivateKey.swift in Sources */,
 				119338DD237E4DB800C4998E /* TestConfig.swift in Sources */,
+				115A370F244011E7005549CC /* ASN1.swift in Sources */,
 				115A36E7243F9B78005549CC /* SignerAlgorithm.swift in Sources */,
 				115A36DD243F9B78005549CC /* Header.swift in Sources */,
 				11E09CBE23A8E033009B6A8D /* TestDataGenerator.swift in Sources */,
 				11641BBB23B715CF0037016B /* TestError.swift in Sources */,
 				115A36A9243F96D4005549CC /* JwtTest.swift in Sources */,
 				115A36CF243F9B77005549CC /* JWTError.swift in Sources */,
+				115A3705244011E7005549CC /* SSLPointerTricks.swift in Sources */,
 				11E751DB23A774DD0022C592 /* IDChainOperationsTest.swift in Sources */,
 				115A36D7243F9B78005549CC /* BlueECDSA.swift in Sources */,
 				115A36CD243F9B77005549CC /* JWT.swift in Sources */,
@@ -1186,6 +1207,8 @@
 				11D03AD423A9D05600549296 /* VerifiableCredentialTest.swift in Sources */,
 				11D03ADA23A9D50200549296 /* VerifiablePresentationTest.swift in Sources */,
 				115A36E5243F9B78005549CC /* VerifierAlgorithm.swift in Sources */,
+				115A3711244011E7005549CC /* ECSignature.swift in Sources */,
+				115A370B244011E7005549CC /* ECDecryptable.swift in Sources */,
 				111F4B7B239E315C00FEE4E0 /* Base64.swift in Sources */,
 				11DA0797238B92A00066CC86 /* SPVAdaptor.swift in Sources */,
 			);
@@ -1200,23 +1223,22 @@
 				1125B582238234FB00D396B6 /* CHDKey.swift in Sources */,
 				A31ACE2223F199BA008EC032 /* VerifiableCredentialBuilder.swift in Sources */,
 				115A36C4243F9B77005549CC /* Claims.swift in Sources */,
-				115A369F243DBEB5005549CC /* ASN1.swift in Sources */,
 				A31ACE0F23F199AE008EC032 /* DIDAdapter.swift in Sources */,
 				A31ACE0623F199AE008EC032 /* PublicKey.swift in Sources */,
 				A31801A324015EA30087E074 /* DIDResolver.swift in Sources */,
 				115A36DE243F9B78005549CC /* JWTEncoder.swift in Sources */,
-				115A369A243DBEB5005549CC /* SSLPointerTricks.swift in Sources */,
 				11D1D5422435D2C800A78617 /* DIDHistory.swift in Sources */,
 				115A36A5243E286F005549CC /* JwtBuilder.swift in Sources */,
 				115A36DC243F9B78005549CC /* Header.swift in Sources */,
 				A31ACE0D23F199AE008EC032 /* FileSystemStorage.swift in Sources */,
+				115A3706244011E7005549CC /* ECError.swift in Sources */,
 				115A36E4243F9B78005549CC /* VerifierAlgorithm.swift in Sources */,
 				A31ACE0A23F199AE008EC032 /* DIDURL.swift in Sources */,
 				11782ACE242130C4009A1F5A /* DIDURLLexer.swift in Sources */,
+				115A370A244011E7005549CC /* ECDecryptable.swift in Sources */,
 				115A36EA243F9B78005549CC /* NoneAlgorithm.swift in Sources */,
 				A31ACE1323F199AE008EC032 /* DID.swift in Sources */,
 				115A36E0243F9B78005549CC /* BlueHMAC.swift in Sources */,
-				115A36A0243DBEB5005549CC /* ECSignature.swift in Sources */,
 				A31ACE3F23F19A22008EC032 /* DateHelper.swift in Sources */,
 				1147721523F6976800C7C36F /* Mnemonic.swift in Sources */,
 				11782ACA242130C4009A1F5A /* DIDURLParserATN.swift in Sources */,
@@ -1229,20 +1251,21 @@
 				115A36E8243F9B78005549CC /* JWTDecoder.swift in Sources */,
 				A31ACE0923F199AE008EC032 /* DIDStorage.swift in Sources */,
 				A31ACE2323F199BA008EC032 /* VerifiableCredential.swift in Sources */,
-				115A3698243DBEB4005549CC /* ECPublicKey.swift in Sources */,
 				110830CF241FA0E4000FDD2B /* ResolverCache.swift in Sources */,
-				115A3699243DBEB4005549CC /* ECSignable.swift in Sources */,
+				115A3702244011E7005549CC /* ECSignable.swift in Sources */,
 				A31ACE3B23F19A22008EC032 /* DateFormatter.swift in Sources */,
 				A31801AB240281B00087E074 /* LRUCache.swift in Sources */,
+				115A3712244011E7005549CC /* ECEncryptable.swift in Sources */,
 				A31ACE6923F19A66008EC032 /* IDTransactionInfo.swift in Sources */,
 				11782ACC242130C4009A1F5A /* DIDURLListener.swift in Sources */,
+				115A370E244011E7005549CC /* ASN1.swift in Sources */,
+				115A370C244011E7005549CC /* Data+Extensions.swift in Sources */,
+				115A36FE244011E7005549CC /* EllipticCurve.swift in Sources */,
+				115A3710244011E7005549CC /* ECSignature.swift in Sources */,
 				A31ACE1F23F199BA008EC032 /* VerifiablePresentation.swift in Sources */,
 				A31ACE3D23F19A22008EC032 /* JsonSerializer.swift in Sources */,
-				115A3697243DBEB4005549CC /* EllipticCurve.swift in Sources */,
-				115A369D243DBEB5005549CC /* ECDecryptable.swift in Sources */,
 				A31ACE1223F199AE008EC032 /* DIDBackend.swift in Sources */,
 				A31ACE5F23F19A4E008EC032 /* Metadata.swift in Sources */,
-				115A369E243DBEB5005549CC /* Data+Extensions.swift in Sources */,
 				A31ACE6B23F19A66008EC032 /* IDChainRequestOperation.swift in Sources */,
 				A31ACE6A23F19A66008EC032 /* ResolveResult.swift in Sources */,
 				A31ACE0723F199AE008EC032 /* DIDDocumentBuilder.swift in Sources */,
@@ -1256,24 +1279,24 @@
 				A31ACE0E23F199AE008EC032 /* DIDDocumentProof.swift in Sources */,
 				11782AC8242130C4009A1F5A /* DIDURLBaseListener.swift in Sources */,
 				A31ACE1E23F199BA008EC032 /* VerifiablePresentationBuilder.swift in Sources */,
-				115A369B243DBEB5005549CC /* ECError.swift in Sources */,
 				A31ACE0B23F199AE008EC032 /* DIDStore.swift in Sources */,
 				A31ACE1023F199AE008EC032 /* DIDDocument.swift in Sources */,
 				A31ACE2823F19A04008EC032 /* Errors.swift in Sources */,
 				11795211241B3A7100A1C55B /* RegexHelper.swift in Sources */,
-				115A36A1243DBEB5005549CC /* ECEncryptable.swift in Sources */,
 				A31ACE3723F19A22008EC032 /* ExtensionInt.swift in Sources */,
-				115A369C243DBEB5005549CC /* ECPrivateKey.swift in Sources */,
 				115A36C8243F9B77005549CC /* JWTVerifier.swift in Sources */,
 				A3368469242201D90049126D /* LogLevel.swift in Sources */,
 				A31801A9240277190087E074 /* JsonNode.swift in Sources */,
 				115A36CC243F9B77005549CC /* JWT.swift in Sources */,
 				115A36D2243F9B78005549CC /* ClaimsOpenID.swift in Sources */,
+				115A3700244011E7005549CC /* ECPublicKey.swift in Sources */,
 				A31ACE1123F199AE008EC032 /* DIDObject.swift in Sources */,
 				A31ACE3C23F19A22008EC032 /* HDKey.swift in Sources */,
 				11B096DA241930690065228B /* SHA256Helper.swift in Sources */,
 				A31ACE2123F199BA008EC032 /* VerifiableCredentialSubject.swift in Sources */,
+				115A3704244011E7005549CC /* SSLPointerTricks.swift in Sources */,
 				A31ACE2023F199BA008EC032 /* VerifiableCredentialIssuer.swift in Sources */,
+				115A3708244011E7005549CC /* ECPrivateKey.swift in Sources */,
 				115A36D0243F9B77005549CC /* ClaimsMicroProfile.swift in Sources */,
 				115A36CE243F9B77005549CC /* JWTError.swift in Sources */,
 				A31ACE1C23F199BA008EC032 /* VerifiableCredentialProof.swift in Sources */,
@@ -1320,7 +1343,7 @@
 					"$(PROJECT_DIR)/ElastosDIDSDKTests",
 				);
 				INFOPLIST_FILE = ElastosDIDSDKTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1354,7 +1377,7 @@
 					"$(PROJECT_DIR)/ElastosDIDSDKTests",
 				);
 				INFOPLIST_FILE = ElastosDIDSDKTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1426,7 +1449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1485,7 +1508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

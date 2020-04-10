@@ -14,17 +14,23 @@ class JwtTest: XCTestCase {
 
     func testJwt() {
         do {
-            let testData = TestData()
-            _ = testData.setupStore(true)
-            testData.initIdentity()
+            let pb = [3, -88, 37, -56, 65, -52, 81, 125, -14, -79, 105, 19, 116, 66, 106, 1, -53, -49, -53, 3, 66, 75, 8, -32, 54, -24, -60, -85, -47, -45, 25, 81, 34]
+            let pr = [10, 1, 112, -118, -123, -99, -41, 127, -74, 42, 0, 22, 13, -79, -23, -122, 55, -124, -91, 19, 12, 112, 44, -86, 8, 17, -115, -115, 103, -5, 15, 40]
+            let pbData = Data.init(bytes: pb, count: pb.count)
+            let prData = Data.init(bytes: pr, count: pr.count)
+            try HDKey.DerivedKey.keyPair(prData)
 
-            let doc = testData.loadTestDocument()
+            let testData = TestData()
+            _ = try testData.setupStore(true)
+            try testData.initIdentity()
+
+            let doc = try testData.loadTestDocument()
             XCTAssertNotNil(doc)
             XCTAssertTrue(doc.isValid)
 
             let h = Header()
-            h["library"] = "Elastos DID"
-            h["version"] = "1.0"
+//            h["library"] = "Elastos DID"
+//            h["version"] = "1.0"
 
         } catch {
             XCTFail()

@@ -245,7 +245,7 @@ public class DIDDocument {
      // TODO:
      }
      */
-    public func keyPair(ofId: DIDURL, using storePassword: String) throws -> KeyValuePairs<Any, Any> {
+    public func keyPair(ofId: DIDURL, using storePassword: String) throws -> [String: String] {
         guard containsPublicKey(forId: ofId) else {
             throw DIDError.illegalArgument("Key no exist")
         }
@@ -259,7 +259,7 @@ public class DIDDocument {
         return try HDKey.DerivedKey.keyPair(getMeta().store!.loadPrivateKey(for: subject, byId: ofId, using: storePassword))
     }
 
-    public func keyPair(ofId: String, using storePassword: String) throws -> KeyValuePairs<Any, Any>{
+    public func keyPair(ofId: String, using storePassword: String) throws -> [String: String] {
         return try keyPair(ofId: DIDURL(subject, ofId), using: storePassword)
     }
 

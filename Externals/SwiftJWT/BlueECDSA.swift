@@ -14,7 +14,6 @@
  * limitations under the License.
  **/
 
-import CryptorECC
 import LoggerAPI
 import Foundation
 
@@ -103,7 +102,7 @@ class BlueECVerifier: VerifierAlgorithm {
             return signature.verify(plaintext: data, using: publicKey)
         }
         catch {
-            Log.error("Verification failed: \(error)")
+//            Log.error("Verification failed: \(error)")
             return false
         }
     }

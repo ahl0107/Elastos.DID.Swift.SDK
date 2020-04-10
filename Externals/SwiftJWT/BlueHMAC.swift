@@ -41,7 +41,7 @@ class BlueHMAC: SignerAlgorithm, VerifierAlgorithm {
     
     func sign(_ data: Data) throws -> Data {
         guard #available(macOS 10.12, iOS 10.0, *) else {
-            Log.error("macOS 10.12.0 (Sierra) or higher or iOS 10.0 or higher is required by Cryptor")
+//            Log.error("macOS 10.12.0 (Sierra) or higher or iOS 10.0 or higher is required by Cryptor")
             throw JWTError.osVersionToLow
         }
         guard let hmac = HMAC(using: algorithm, key: key).update(data: data)?.final() else {
@@ -78,7 +78,7 @@ class BlueHMAC: SignerAlgorithm, VerifierAlgorithm {
             return expectedHMAC == signature
         }
         catch {
-            Log.error("Verification failed: \(error)")
+//            Log.error("Verification failed: \(error)")
             return false
         }
     }
