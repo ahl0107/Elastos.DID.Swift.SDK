@@ -64,6 +64,47 @@
 		115A36A0243DBEB5005549CC /* ECSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3695243DBEB4005549CC /* ECSignature.swift */; };
 		115A36A1243DBEB5005549CC /* ECEncryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A3696243DBEB4005549CC /* ECEncryptable.swift */; };
 		115A36A5243E286F005549CC /* JwtBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36A4243E286F005549CC /* JwtBuilder.swift */; };
+		115A36A9243F96D4005549CC /* JwtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36A8243F96D4005549CC /* JwtTest.swift */; };
+		115A36C4243F9B77005549CC /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36AF243F9B77005549CC /* Claims.swift */; };
+		115A36C5243F9B77005549CC /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36AF243F9B77005549CC /* Claims.swift */; };
+		115A36C6243F9B77005549CC /* RSAKeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B0243F9B77005549CC /* RSAKeyType.swift */; };
+		115A36C7243F9B77005549CC /* RSAKeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B0243F9B77005549CC /* RSAKeyType.swift */; };
+		115A36C8243F9B77005549CC /* JWTVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B1243F9B77005549CC /* JWTVerifier.swift */; };
+		115A36C9243F9B77005549CC /* JWTVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B1243F9B77005549CC /* JWTVerifier.swift */; };
+		115A36CA243F9B77005549CC /* JWTSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B2243F9B77005549CC /* JWTSigner.swift */; };
+		115A36CB243F9B77005549CC /* JWTSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B2243F9B77005549CC /* JWTSigner.swift */; };
+		115A36CC243F9B77005549CC /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B3243F9B77005549CC /* JWT.swift */; };
+		115A36CD243F9B77005549CC /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B3243F9B77005549CC /* JWT.swift */; };
+		115A36CE243F9B77005549CC /* JWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B4243F9B77005549CC /* JWTError.swift */; };
+		115A36CF243F9B77005549CC /* JWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B4243F9B77005549CC /* JWTError.swift */; };
+		115A36D0243F9B77005549CC /* ClaimsMicroProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B6243F9B77005549CC /* ClaimsMicroProfile.swift */; };
+		115A36D1243F9B78005549CC /* ClaimsMicroProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B6243F9B77005549CC /* ClaimsMicroProfile.swift */; };
+		115A36D2243F9B78005549CC /* ClaimsOpenID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B7243F9B77005549CC /* ClaimsOpenID.swift */; };
+		115A36D3243F9B78005549CC /* ClaimsOpenID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B7243F9B77005549CC /* ClaimsOpenID.swift */; };
+		115A36D4243F9B78005549CC /* ClaimsStandardJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B8243F9B77005549CC /* ClaimsStandardJWT.swift */; };
+		115A36D5243F9B78005549CC /* ClaimsStandardJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B8243F9B77005549CC /* ClaimsStandardJWT.swift */; };
+		115A36D6243F9B78005549CC /* BlueECDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B9243F9B77005549CC /* BlueECDSA.swift */; };
+		115A36D7243F9B78005549CC /* BlueECDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36B9243F9B77005549CC /* BlueECDSA.swift */; };
+		115A36D8243F9B78005549CC /* ValidateClaimsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BA243F9B77005549CC /* ValidateClaimsResult.swift */; };
+		115A36D9243F9B78005549CC /* ValidateClaimsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BA243F9B77005549CC /* ValidateClaimsResult.swift */; };
+		115A36DA243F9B78005549CC /* Data+Base64URLEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BB243F9B77005549CC /* Data+Base64URLEncoded.swift */; };
+		115A36DB243F9B78005549CC /* Data+Base64URLEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BB243F9B77005549CC /* Data+Base64URLEncoded.swift */; };
+		115A36DC243F9B78005549CC /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BC243F9B77005549CC /* Header.swift */; };
+		115A36DD243F9B78005549CC /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BC243F9B77005549CC /* Header.swift */; };
+		115A36DE243F9B78005549CC /* JWTEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BD243F9B77005549CC /* JWTEncoder.swift */; };
+		115A36DF243F9B78005549CC /* JWTEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BD243F9B77005549CC /* JWTEncoder.swift */; };
+		115A36E0243F9B78005549CC /* BlueHMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BE243F9B77005549CC /* BlueHMAC.swift */; };
+		115A36E1243F9B78005549CC /* BlueHMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BE243F9B77005549CC /* BlueHMAC.swift */; };
+		115A36E2243F9B78005549CC /* BlueRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BF243F9B77005549CC /* BlueRSA.swift */; };
+		115A36E3243F9B78005549CC /* BlueRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36BF243F9B77005549CC /* BlueRSA.swift */; };
+		115A36E4243F9B78005549CC /* VerifierAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C0243F9B77005549CC /* VerifierAlgorithm.swift */; };
+		115A36E5243F9B78005549CC /* VerifierAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C0243F9B77005549CC /* VerifierAlgorithm.swift */; };
+		115A36E6243F9B78005549CC /* SignerAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C1243F9B77005549CC /* SignerAlgorithm.swift */; };
+		115A36E7243F9B78005549CC /* SignerAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C1243F9B77005549CC /* SignerAlgorithm.swift */; };
+		115A36E8243F9B78005549CC /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C2243F9B77005549CC /* JWTDecoder.swift */; };
+		115A36E9243F9B78005549CC /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C2243F9B77005549CC /* JWTDecoder.swift */; };
+		115A36EA243F9B78005549CC /* NoneAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C3243F9B77005549CC /* NoneAlgorithm.swift */; };
+		115A36EB243F9B78005549CC /* NoneAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A36C3243F9B77005549CC /* NoneAlgorithm.swift */; };
 		11641BB523B702FC0037016B /* AbstractAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11641BB423B702FC0037016B /* AbstractAdapter.swift */; };
 		11641BBB23B715CF0037016B /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11641BBA23B715CF0037016B /* TestError.swift */; };
 		11782AC6242130C4009A1F5A /* DIDURLLexer.tokens in Resources */ = {isa = PBXBuildFile; fileRef = 11782ABB242130C3009A1F5A /* DIDURLLexer.tokens */; };
@@ -285,6 +326,27 @@
 		115A3695243DBEB4005549CC /* ECSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSignature.swift; sourceTree = "<group>"; };
 		115A3696243DBEB4005549CC /* ECEncryptable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECEncryptable.swift; sourceTree = "<group>"; };
 		115A36A4243E286F005549CC /* JwtBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtBuilder.swift; sourceTree = "<group>"; };
+		115A36A8243F96D4005549CC /* JwtTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtTest.swift; sourceTree = "<group>"; };
+		115A36AF243F9B77005549CC /* Claims.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Claims.swift; sourceTree = "<group>"; };
+		115A36B0243F9B77005549CC /* RSAKeyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAKeyType.swift; sourceTree = "<group>"; };
+		115A36B1243F9B77005549CC /* JWTVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTVerifier.swift; sourceTree = "<group>"; };
+		115A36B2243F9B77005549CC /* JWTSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTSigner.swift; sourceTree = "<group>"; };
+		115A36B3243F9B77005549CC /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		115A36B4243F9B77005549CC /* JWTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTError.swift; sourceTree = "<group>"; };
+		115A36B6243F9B77005549CC /* ClaimsMicroProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimsMicroProfile.swift; sourceTree = "<group>"; };
+		115A36B7243F9B77005549CC /* ClaimsOpenID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimsOpenID.swift; sourceTree = "<group>"; };
+		115A36B8243F9B77005549CC /* ClaimsStandardJWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimsStandardJWT.swift; sourceTree = "<group>"; };
+		115A36B9243F9B77005549CC /* BlueECDSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueECDSA.swift; sourceTree = "<group>"; };
+		115A36BA243F9B77005549CC /* ValidateClaimsResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateClaimsResult.swift; sourceTree = "<group>"; };
+		115A36BB243F9B77005549CC /* Data+Base64URLEncoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Base64URLEncoded.swift"; sourceTree = "<group>"; };
+		115A36BC243F9B77005549CC /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		115A36BD243F9B77005549CC /* JWTEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTEncoder.swift; sourceTree = "<group>"; };
+		115A36BE243F9B77005549CC /* BlueHMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueHMAC.swift; sourceTree = "<group>"; };
+		115A36BF243F9B77005549CC /* BlueRSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueRSA.swift; sourceTree = "<group>"; };
+		115A36C0243F9B77005549CC /* VerifierAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifierAlgorithm.swift; sourceTree = "<group>"; };
+		115A36C1243F9B77005549CC /* SignerAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignerAlgorithm.swift; sourceTree = "<group>"; };
+		115A36C2243F9B77005549CC /* JWTDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		115A36C3243F9B77005549CC /* NoneAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoneAlgorithm.swift; sourceTree = "<group>"; };
 		11641BB423B702FC0037016B /* AbstractAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAdapter.swift; sourceTree = "<group>"; };
 		11641BBA23B715CF0037016B /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		11782ABB242130C3009A1F5A /* DIDURLLexer.tokens */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DIDURLLexer.tokens; path = Parser/DIDURLLexer.tokens; sourceTree = "<group>"; };
@@ -534,6 +596,7 @@
 				11641BB423B702FC0037016B /* AbstractAdapter.swift */,
 				116CAA56236008FD00BBEE4F /* TestUtils */,
 				11D4B9B423535E7000453218 /* DIDDoucumentTests.swift */,
+				115A36A8243F96D4005549CC /* JwtTest.swift */,
 				11D4B9C623545A5700453218 /* DIDStoreTests.swift */,
 				11054F1E239D2088008A4500 /* DIDTest.swift */,
 				11054F1C239D1B31008A4500 /* DIDURLTest.swift */,
@@ -566,6 +629,41 @@
 				115A3696243DBEB4005549CC /* ECEncryptable.swift */,
 			);
 			path = CryptorECC;
+			sourceTree = "<group>";
+		};
+		115A36AE243F9B77005549CC /* SwiftJWT */ = {
+			isa = PBXGroup;
+			children = (
+				115A36AF243F9B77005549CC /* Claims.swift */,
+				115A36B0243F9B77005549CC /* RSAKeyType.swift */,
+				115A36B1243F9B77005549CC /* JWTVerifier.swift */,
+				115A36B2243F9B77005549CC /* JWTSigner.swift */,
+				115A36B3243F9B77005549CC /* JWT.swift */,
+				115A36B4243F9B77005549CC /* JWTError.swift */,
+				115A36B5243F9B77005549CC /* ClaimsExamples */,
+				115A36B9243F9B77005549CC /* BlueECDSA.swift */,
+				115A36BA243F9B77005549CC /* ValidateClaimsResult.swift */,
+				115A36BB243F9B77005549CC /* Data+Base64URLEncoded.swift */,
+				115A36BC243F9B77005549CC /* Header.swift */,
+				115A36BD243F9B77005549CC /* JWTEncoder.swift */,
+				115A36BE243F9B77005549CC /* BlueHMAC.swift */,
+				115A36BF243F9B77005549CC /* BlueRSA.swift */,
+				115A36C0243F9B77005549CC /* VerifierAlgorithm.swift */,
+				115A36C1243F9B77005549CC /* SignerAlgorithm.swift */,
+				115A36C2243F9B77005549CC /* JWTDecoder.swift */,
+				115A36C3243F9B77005549CC /* NoneAlgorithm.swift */,
+			);
+			path = SwiftJWT;
+			sourceTree = "<group>";
+		};
+		115A36B5243F9B77005549CC /* ClaimsExamples */ = {
+			isa = PBXGroup;
+			children = (
+				115A36B6243F9B77005549CC /* ClaimsMicroProfile.swift */,
+				115A36B7243F9B77005549CC /* ClaimsOpenID.swift */,
+				115A36B8243F9B77005549CC /* ClaimsStandardJWT.swift */,
+			);
+			path = ClaimsExamples;
 			sourceTree = "<group>";
 		};
 		116C94E8234D825B00BA9777 /* HDKey */ = {
@@ -627,6 +725,7 @@
 		11E3F791233D121900EF35C3 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				115A36AE243F9B77005549CC /* SwiftJWT */,
 				115A368B243DBEB4005549CC /* CryptorECC */,
 				11133F5423C48B4600BFDA3E /* SPVWrapper.xcodeproj */,
 				110AD2FD234E44BA006578D6 /* base58 */,
@@ -1050,22 +1149,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115A36C5243F9B77005549CC /* Claims.swift in Sources */,
 				11641BB523B702FC0037016B /* AbstractAdapter.swift in Sources */,
 				1137CFA92398D68D00250D4F /* CHDKey.swift in Sources */,
+				115A36CB243F9B77005549CC /* JWTSigner.swift in Sources */,
 				1137CFAB2398DE1C00250D4F /* Base58.swift in Sources */,
+				115A36D9243F9B78005549CC /* ValidateClaimsResult.swift in Sources */,
 				11D4B9B523535E7000453218 /* DIDDoucumentTests.swift in Sources */,
+				115A36C7243F9B77005549CC /* RSAKeyType.swift in Sources */,
+				115A36E1243F9B78005549CC /* BlueHMAC.swift in Sources */,
 				11E09CBC23A8DB5A009B6A8D /* IssuerTest.swift in Sources */,
+				115A36E3243F9B78005549CC /* BlueRSA.swift in Sources */,
 				11054F1F239D2088008A4500 /* DIDTest.swift in Sources */,
+				115A36D5243F9B78005549CC /* ClaimsStandardJWT.swift in Sources */,
 				11E7519F23A7570A0022C592 /* TestData.swift in Sources */,
 				11054F1D239D1B31008A4500 /* DIDURLTest.swift in Sources */,
 				11D4B9C723545A5700453218 /* DIDStoreTests.swift in Sources */,
+				115A36D3243F9B78005549CC /* ClaimsOpenID.swift in Sources */,
 				119338DD237E4DB800C4998E /* TestConfig.swift in Sources */,
+				115A36E7243F9B78005549CC /* SignerAlgorithm.swift in Sources */,
+				115A36DD243F9B78005549CC /* Header.swift in Sources */,
 				11E09CBE23A8E033009B6A8D /* TestDataGenerator.swift in Sources */,
 				11641BBB23B715CF0037016B /* TestError.swift in Sources */,
+				115A36A9243F96D4005549CC /* JwtTest.swift in Sources */,
+				115A36CF243F9B77005549CC /* JWTError.swift in Sources */,
 				11E751DB23A774DD0022C592 /* IDChainOperationsTest.swift in Sources */,
+				115A36D7243F9B78005549CC /* BlueECDSA.swift in Sources */,
+				115A36CD243F9B77005549CC /* JWT.swift in Sources */,
+				115A36EB243F9B78005549CC /* NoneAlgorithm.swift in Sources */,
+				115A36DF243F9B78005549CC /* JWTEncoder.swift in Sources */,
+				115A36E9243F9B78005549CC /* JWTDecoder.swift in Sources */,
+				115A36DB243F9B78005549CC /* Data+Base64URLEncoded.swift in Sources */,
+				115A36D1243F9B78005549CC /* ClaimsMicroProfile.swift in Sources */,
 				11E751A523A75A120022C592 /* DummyAdapter.swift in Sources */,
+				115A36C9243F9B77005549CC /* JWTVerifier.swift in Sources */,
 				11D03AD423A9D05600549296 /* VerifiableCredentialTest.swift in Sources */,
 				11D03ADA23A9D50200549296 /* VerifiablePresentationTest.swift in Sources */,
+				115A36E5243F9B78005549CC /* VerifierAlgorithm.swift in Sources */,
 				111F4B7B239E315C00FEE4E0 /* Base64.swift in Sources */,
 				11DA0797238B92A00066CC86 /* SPVAdaptor.swift in Sources */,
 			);
@@ -1079,26 +1199,34 @@
 				A31ACE6123F19A4E008EC032 /* DIDMeta.swift in Sources */,
 				1125B582238234FB00D396B6 /* CHDKey.swift in Sources */,
 				A31ACE2223F199BA008EC032 /* VerifiableCredentialBuilder.swift in Sources */,
+				115A36C4243F9B77005549CC /* Claims.swift in Sources */,
 				115A369F243DBEB5005549CC /* ASN1.swift in Sources */,
 				A31ACE0F23F199AE008EC032 /* DIDAdapter.swift in Sources */,
 				A31ACE0623F199AE008EC032 /* PublicKey.swift in Sources */,
 				A31801A324015EA30087E074 /* DIDResolver.swift in Sources */,
+				115A36DE243F9B78005549CC /* JWTEncoder.swift in Sources */,
 				115A369A243DBEB5005549CC /* SSLPointerTricks.swift in Sources */,
 				11D1D5422435D2C800A78617 /* DIDHistory.swift in Sources */,
 				115A36A5243E286F005549CC /* JwtBuilder.swift in Sources */,
+				115A36DC243F9B78005549CC /* Header.swift in Sources */,
 				A31ACE0D23F199AE008EC032 /* FileSystemStorage.swift in Sources */,
+				115A36E4243F9B78005549CC /* VerifierAlgorithm.swift in Sources */,
 				A31ACE0A23F199AE008EC032 /* DIDURL.swift in Sources */,
 				11782ACE242130C4009A1F5A /* DIDURLLexer.swift in Sources */,
+				115A36EA243F9B78005549CC /* NoneAlgorithm.swift in Sources */,
 				A31ACE1323F199AE008EC032 /* DID.swift in Sources */,
+				115A36E0243F9B78005549CC /* BlueHMAC.swift in Sources */,
 				115A36A0243DBEB5005549CC /* ECSignature.swift in Sources */,
 				A31ACE3F23F19A22008EC032 /* DateHelper.swift in Sources */,
 				1147721523F6976800C7C36F /* Mnemonic.swift in Sources */,
 				11782ACA242130C4009A1F5A /* DIDURLParserATN.swift in Sources */,
+				115A36C6243F9B77005549CC /* RSAKeyType.swift in Sources */,
 				A31ACE0823F199AE008EC032 /* Service.swift in Sources */,
 				A31ACE6023F19A4E008EC032 /* CredentialMeta.swift in Sources */,
 				11B096E324193E200065228B /* OrderedDictionary.swift in Sources */,
 				11782AD0242130C4009A1F5A /* ParserHelper.swift in Sources */,
 				A31ACE2723F19A04008EC032 /* DIDError.swift in Sources */,
+				115A36E8243F9B78005549CC /* JWTDecoder.swift in Sources */,
 				A31ACE0923F199AE008EC032 /* DIDStorage.swift in Sources */,
 				A31ACE2323F199BA008EC032 /* VerifiableCredential.swift in Sources */,
 				115A3698243DBEB4005549CC /* ECPublicKey.swift in Sources */,
@@ -1121,7 +1249,9 @@
 				110AD2FF234E44C8006578D6 /* Base58.swift in Sources */,
 				11782ACF242130C4009A1F5A /* DIDURLParser.swift in Sources */,
 				A31ACE6C23F19A66008EC032 /* IDChainRequest.swift in Sources */,
+				115A36DA243F9B78005549CC /* Data+Base64URLEncoded.swift in Sources */,
 				A31ACE1D23F199BA008EC032 /* VerifiablePresentationProof.swift in Sources */,
+				115A36CA243F9B77005549CC /* JWTSigner.swift in Sources */,
 				11782ACB242130C4009A1F5A /* DIDURLLexerATN.swift in Sources */,
 				A31ACE0E23F199AE008EC032 /* DIDDocumentProof.swift in Sources */,
 				11782AC8242130C4009A1F5A /* DIDURLBaseListener.swift in Sources */,
@@ -1134,20 +1264,30 @@
 				115A36A1243DBEB5005549CC /* ECEncryptable.swift in Sources */,
 				A31ACE3723F19A22008EC032 /* ExtensionInt.swift in Sources */,
 				115A369C243DBEB5005549CC /* ECPrivateKey.swift in Sources */,
+				115A36C8243F9B77005549CC /* JWTVerifier.swift in Sources */,
 				A3368469242201D90049126D /* LogLevel.swift in Sources */,
 				A31801A9240277190087E074 /* JsonNode.swift in Sources */,
+				115A36CC243F9B77005549CC /* JWT.swift in Sources */,
+				115A36D2243F9B78005549CC /* ClaimsOpenID.swift in Sources */,
 				A31ACE1123F199AE008EC032 /* DIDObject.swift in Sources */,
 				A31ACE3C23F19A22008EC032 /* HDKey.swift in Sources */,
 				11B096DA241930690065228B /* SHA256Helper.swift in Sources */,
 				A31ACE2123F199BA008EC032 /* VerifiableCredentialSubject.swift in Sources */,
 				A31ACE2023F199BA008EC032 /* VerifiableCredentialIssuer.swift in Sources */,
+				115A36D0243F9B77005549CC /* ClaimsMicroProfile.swift in Sources */,
+				115A36CE243F9B77005549CC /* JWTError.swift in Sources */,
 				A31ACE1C23F199BA008EC032 /* VerifiableCredentialProof.swift in Sources */,
+				115A36D6243F9B78005549CC /* BlueECDSA.swift in Sources */,
 				A31ACE0C23F199AE008EC032 /* Constants.swift in Sources */,
+				115A36E2243F9B78005549CC /* BlueRSA.swift in Sources */,
 				A31ACE6823F19A66008EC032 /* ResolveResultStatus.swift in Sources */,
 				A33684632421F7EE0049126D /* Log.swift in Sources */,
 				A31ACE4123F19A22008EC032 /* PathExtracter.swift in Sources */,
 				A34D732923FA758900B4CB3E /* IDGetter.swift in Sources */,
 				A31ACE3623F19A22008EC032 /* JsonGenerator.swift in Sources */,
+				115A36E6243F9B78005549CC /* SignerAlgorithm.swift in Sources */,
+				115A36D4243F9B78005549CC /* ClaimsStandardJWT.swift in Sources */,
+				115A36D8243F9B78005549CC /* ValidateClaimsResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

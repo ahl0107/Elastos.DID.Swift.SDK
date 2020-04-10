@@ -11,8 +11,6 @@ public class JwtBuilder<T: Claims> {
     init(publicKey: @escaping (_ id: String?) throws -> String?, privateKey: @escaping (_ id: String?, _ storepass: String) throws -> String?) {
         publicKeyClosure = publicKey
         privateKeyClosure = privateKey
-        self.h = Header()
-        self.c = nil
     }
 
     func header(header: Header = Header()) -> JwtBuilder {
@@ -26,10 +24,10 @@ public class JwtBuilder<T: Claims> {
     }
 
     func sign(using password: String) throws -> String {
-        let myJWT = JWT(header: self.h!, claims: self.c!)
+        let jwt = JWT(header: self.h!, claims: self.c!)
         let privateKey = try self.privateKeyClosure!(nil, password)
         let jwtSigner = JWTSigner.rs256(privateKey: (privateKey?.data(using: .utf8))!)
-        let signedJWT = try myJWT.sign(using: jwtSigner)
+        let signedJWT = try jwt.sign(using: jwtSigner)
 
         return signedJWT
     }

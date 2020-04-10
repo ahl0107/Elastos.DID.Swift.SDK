@@ -1,7 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 def import_pods
   pod 'PromiseKit' 
-  pod 'SwiftJWT'
+  pod 'BlueRSA', '~> 1.0'
+  pod 'LoggerAPI', '~> 1.7'
+  pod 'KituraContracts', '~> 1.1'
+  pod 'BlueCryptor', '~> 1.0'
 end
 
 target :ElastosDIDSDK do
@@ -13,4 +16,3 @@ target :ElastosDIDSDK do
     import_pods
   end
 end
-
