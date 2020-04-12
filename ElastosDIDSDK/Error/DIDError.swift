@@ -1,26 +1,26 @@
 import Foundation
 
 public enum DIDError: Error {
-    case unknownFailure (_ des: String? = nil)
-    case illegalArgument(_ des: String? = nil)
+    case unknownFailure (_ des: String?)
+    case illegalArgument(_ des: String?)
 
-    case malformedMeta  (_ des: String? = nil)
-    case malformedDID   (_ des: String? = nil)
-    case malformedDIDURL(_ des: String? = nil)
-    case malformedDocument  (_ des: String? = nil)
-    case malformedCredential(_ des: String? = nil)
-    case malformedPresentation(_ des: String? = nil)
+    case malformedMeta  (_ des: String?)
+    case malformedDID   (_ des: String?)
+    case malformedDIDURL(_ des: String?)
+    case malformedDocument  (_ des: String?)
+    case malformedCredential(_ des: String?)
+    case malformedPresentation(_ des: String?)
 
-    case didStoreError  (_ des: String? = nil)
+    case didStoreError  (_ des: String?)
 
-    case didResolveError(_ des: String? = nil)
-    case didDeactivated (_ des: String? = nil)
-    case didExpired     (_ des: String? = nil)
-    case didtransactionError(_ des: String? = nil)
+    case didResolveError(_ des: String?)
+    case didDeactivated (_ des: String?)
+    case didExpired     (_ des: String?)
+    case didtransactionError(_ des: String?)
 
-    case invalidState   (_ des: String? = nil)
+    case invalidState   (_ des: String?)
 
-    case notFoundError (_ des: String? = nil)
+    case notFoundError (_ des: String?)
 }
 
 extension DIDError {
