@@ -4,7 +4,7 @@ osx_image: xcode10.2
 
 matrix:
   include:
-#  - env: BUILD_ENV=arm64 SCHEME=ElastosDIDSDK BUILD_TYPE=Debug SDK=iphoneos12.2
+  - env: BUILD_ENV=arm64 SCHEME=ElastosDIDSDK BUILD_TYPE=Debug SDK=iphoneos12.2
 
   - env: BUILD_ENV=x64 SCHEME=ElastosDIDSDK BUILD_TYPE=Debug SDK=iphonesimulator12.2
 
