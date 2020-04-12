@@ -5,13 +5,13 @@ SCRIPT_DIRNAME="$(basename "${SCRIPT_PATH}")"
 
 LIBPATH=${SCRIPT_PATH}/../Externals/HDKey
 LIBPATHSPV=${SCRIPT_PATH}/../Externals/SPVWrapper/SPVWrapper
-LIBPATTERN="/elastos.*ios_arm64.*gz"
-LIBPATTERNSPV="/elastos.*ios_arm64.*gz"
-LIBDIR="-iphoneos"
+LIBPATTERN="/elastos.*ios_x64-hdk.*zip"
+LIBPATTERNSPV="/elastos.*ios_x64-spv.*zip"
+LIBDIR="-iphonesimulator"
 
 if [ $1 = "x64" ] ; then
-    LIBPATTERN="/elastos.*ios_x64-hdk.*gz"
-    LIBPATTERNSPV="/elastos.*ios_x64-spv.*gz"
+    LIBPATTERN="/elastos.*ios_x64-hdk.*zip"
+    LIBPATTERNSPV="/elastos.*ios_x64-spv.*zip"
     LIBDIR="-iphonesimulator"
 elif [ $1 = "macOS" ]; then
     LIBPATTERN="/elastos.*darwin_x64.*gz"
