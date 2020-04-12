@@ -4,6 +4,7 @@ import XCTest
 import SPVWrapper
 
 class TestDataGenerator: XCTestCase {
+    /*
     private var outputDir: String = ""
     private var adapter: DIDAdapter!
     private var issuer: DIDDocument!
@@ -371,4 +372,5 @@ class TestDataGenerator: XCTestCase {
         }
         wait(for: [lock], timeout: interval + 10)
     }
+ */
 }
