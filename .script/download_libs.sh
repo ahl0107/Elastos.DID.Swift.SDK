@@ -24,6 +24,7 @@ libPackageName=${packageUrl##*/}
 #libPackageNamespv=${packageUrlspv##*/}
 
 cd /tmp
+echo "succeed ============"
 echo "https://github.com"${packageUrl} >did_libs.txt
 #echo "https://github.com"${packageUrlspv} >spv_libs.txt
 
