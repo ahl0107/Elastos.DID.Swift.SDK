@@ -108,4 +108,5 @@ class VerifiablePresentationTest: XCTestCase {
             XCTFail()
         }
     }
+    
 }
