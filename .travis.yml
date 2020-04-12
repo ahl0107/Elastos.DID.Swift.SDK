@@ -18,6 +18,5 @@ install:
 
 script:
   - xcodebuild -showsdks
-  - xcodebuild -list -project ElastosCarrierSDK.xcodeproj
   - xcodebuild -workspace ElastosDIDSDK.xcworkspace -scheme ${SCHEME} -configuration ${BUILD_TYPE} -sdk ${SDK} CODE_SIGNING_REQUIRED=NO
   #- ./docs.sh
