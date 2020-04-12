@@ -39,6 +39,7 @@ echo "succeed 4============did_libs.txt"
 wget -i spv_libs.txt
 
 cd ${LIBPATH}
+mkdir lib
 echo "succeed ============5"
 
 cd lib
@@ -51,6 +52,7 @@ echo "succeed ============7"
 
 #
 cd ${LIBPATHSPV}
+mkdir lib
 
 cd lib
 mkdir -- ${LIBDIR}
