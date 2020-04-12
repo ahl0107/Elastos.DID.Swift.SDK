@@ -44,6 +44,8 @@ echo "succeed ============5"
 cd lib
 mkdir -- ${LIBDIR}
 echo "succeed ============6"
+echo $"/tmp/${libPackageName}
+echo $LIBDIR
 tar --strip-components=1 -zxf /tmp/${libPackageName} -C ${LIBDIR}/ lib
 echo "succeed ============7"
 
