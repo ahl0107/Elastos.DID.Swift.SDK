@@ -35,14 +35,12 @@ wget -i did_libs.txt
 wget -i spv_libs.txt
 
 cd ${LIBPATH}
-mkdir lib
 
 cd lib
 mkdir -- ${LIBDIR}
 tar --strip-components=1 -zxf /tmp/${libPackageName} -C ${LIBDIR}/ lib
 
 cd ${LIBPATHSPV}
-mkdir lib
 
 cd lib
 mkdir -- ${LIBDIR}
