@@ -22,7 +22,7 @@ public struct OrderedDictionary<KeyType: Hashable, ValueType> {
     
     public subscript(key: KeyType) -> ValueType? {
         get {
-            _dictionary[key]
+            _dictionary[key] as! ValueType
         }
         set {
             if newValue == nil {
@@ -45,7 +45,8 @@ public struct OrderedDictionary<KeyType: Hashable, ValueType> {
         _keys = _keys.filter {
             $0 != key
         }
-        return (_dictionary.removeValue(forKey: key) != nil)
+        let result: Bool = (_dictionary.removeValue(forKey: key) != nil)
+        return result
     }
     
     public mutating func removeAll(keepCapacity: Int) {
@@ -103,7 +104,8 @@ public struct OrderedDictionaryIterator<KeyType: Hashable, ValueType>: IteratorP
         guard let value = sequence[key] else {
             return nil
         }
-        return (key, value)
+        let result: (KeyType, ValueType) = (key, value)
+        return result
     }
     
 }
