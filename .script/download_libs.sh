@@ -18,6 +18,9 @@ fi
 
 packageUrl=`curl https://github.com/ahl0107/Elastos.DID.Swift.SDK/releases/tag/internal-test | grep -e $LIBPATTERN -o`
 libPackageName=${packageUrl##*/}
+echo "1"
+echo $packageUrl
+echo "2"
 
 cd /tmp
 echo "https://github.com"${packageUrl} >did_libs.txt
