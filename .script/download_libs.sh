@@ -24,18 +24,22 @@ libPackageName=${packageUrl##*/}
 #libPackageNamespv=${packageUrlspv##*/}
 
 cd /tmp
-echo "succeed ============"
+echo "succeed ============1"
 echo "https://github.com"${packageUrl} >did_libs.txt
+echo "succeed ============2"
 #echo "https://github.com"${packageUrlspv} >spv_libs.txt
 
 #remove old package
 rm ${libPackageName}
+echo "succeed ============3"
 #rm ${libPackageNamespv}
 
 wget -i did_libs.txt
+echo "succeed ============4"
 #wget -i spv_libs.txt
 
 cd ${LIBPATH}
+echo "succeed ============5"
 
 cd lib
 mkdir -- ${LIBDIR}
