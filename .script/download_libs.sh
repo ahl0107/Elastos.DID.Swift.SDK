@@ -32,10 +32,11 @@ echo "succeed 2============${packageUrl}"
 #remove old package
 rm ${libPackageName}
 echo "succeed 3============${libPackageName}"
+echo "p"
 #rm ${libPackageNamespv}
 
 wget -i did_libs.txt
-echo "succeed 4============did_libs.txt"
+echo "succeed 4============${did_libs.txt}"
 #wget -i spv_libs.txt
 
 cd ${LIBPATH}
