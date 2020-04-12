@@ -11,9 +11,13 @@ matrix:
 install:
   #- brew install appledoc
   - .script/download_libs.sh ${BUILD_ENV}
+  - sudo gem update --system
+  - sudo gem install -n /usr/local/bin cocoapods
+  - travis_retry pod repo update --verbose
+  - pod install --verbose --no-repo-update
 
 script:
   - xcodebuild -showsdks
   - xcodebuild -list -project ElastosDIDSDK.xcodeproj
-  - xcodebuild -scheme ${SCHEME} -configuration ${BUILD_TYPE} -sdk ${SDK} CODE_SIGNING_REQUIRED=NO
+  - xcodebuild -workspace ElastosDIDSDK.xcworkspace -scheme ${SCHEME} -configuration ${BUILD_TYPE} -sdk ${SDK} CODE_SIGNING_REQUIRED=NO
   #- ./docs.sh
