@@ -47,7 +47,7 @@ mkdir -- ${LIBDIR}
 echo "succeed ============6"
 echo $"/tmp/${libPackageName}"
 echo $LIBDIR
-tar --strip-components=1 -zxf /tmp/${libPackageName} -C ${LIBDIR}/ lib
+tar --strip-components=1 -zxf /tmp/${libPackageName} -C ${LIBDIR}
 echo "succeed ============7"
 
 #
@@ -56,4 +56,4 @@ mkdir lib
 
 cd lib
 mkdir -- ${LIBDIR}
-tar --strip-components=1 -zxf /tmp/${libPackageNamespv} -C ${LIBDIR}/ lib
+tar --strip-components=1 -zxf /tmp/${libPackageNamespv} -C ${LIBDIR}
