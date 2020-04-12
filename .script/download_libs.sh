@@ -21,18 +21,18 @@ fi
 packageUrl=`curl https://github.com/ahl0107/Elastos.DID.Swift.SDK/releases/tag/internal-test | grep -e $LIBPATTERN -o`
 packageUrlspv=`curl https://github.com/ahl0107/Elastos.DID.Swift.SDK/releases/tag/internal-test | grep -e $LIBPATTERNSPV -o`
 libPackageName=${packageUrl##*/}
-libPackageNamespv=${packageUrlspv##*/}
+#libPackageNamespv=${packageUrlspv##*/}
 
 cd /tmp
 echo "https://github.com"${packageUrl} >did_libs.txt
-echo "https://github.com"${packageUrlspv} >spv_libs.txt
+#echo "https://github.com"${packageUrlspv} >spv_libs.txt
 
 #remove old package
 rm ${libPackageName}
-rm ${libPackageNamespv}
+#rm ${libPackageNamespv}
 
 wget -i did_libs.txt
-wget -i spv_libs.txt
+#wget -i spv_libs.txt
 
 cd ${LIBPATH}
 
@@ -40,8 +40,8 @@ cd lib
 mkdir -- ${LIBDIR}
 tar --strip-components=1 -zxf /tmp/${libPackageName} -C ${LIBDIR}/ lib
 
-cd ${LIBPATHSPV}
-
-cd lib
-mkdir -- ${LIBDIR}
-tar --strip-components=1 -zxf /tmp/${libPackageNamespv} -C ${LIBDIR}/ lib
+#cd ${LIBPATHSPV}
+#
+#cd lib
+#mkdir -- ${LIBDIR}
+#tar --strip-components=1 -zxf /tmp/${libPackageNamespv} -C ${LIBDIR}/ lib
